@@ -1,0 +1,669 @@
+/*Fuentes*/
+@font-face{
+    font-family: 'Texto';
+    src: url(fonts/Tillana-Regular.ttf);
+}
+@font-face{
+    font-family: 'TituloJuego';
+    src: url(fonts/Tipografia1_def-Regular.ttf);
+}
+
+body{
+    background-color: #9250BE;
+    color:#FBFBD5;
+    text-align: center;
+    flex-flow: column;
+    font-size: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Texto';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-family: 'Texto';
+}
+
+h3{
+    background-color: #2b0549;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: #FBFBD5; 
+} 
+
+h4 {
+    background-color: #602D7B;
+    padding: .5rem;
+    font-size: 3rem;
+    color: #FBFBD5;
+    text-decoration: underline
+}
+a {
+    color: #FFFBAD;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Texto';
+}
+p{
+    margin-top: 0;
+    font-size: 2rem;
+    font-family:'Texto';
+}
+h5{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-family:'Texto';
+}
+
+.TituloJuego{
+    font-family:'TituloJuego';
+}
+
+/*Estilos Personajes*/
+.cajasPersonajes{
+    display: inline-block;
+    background: #0e0928;
+    margin: 1rem;
+    padding: 20px 10px;
+    width: 19rem;
+    height: 24rem;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+.cajasPersonajes:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.img{
+    bottom: 0.5rem;
+    border-radius: 10px;
+    position: relative;
+    align-items: flex-end;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+} 
+.img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 2;
+}
+
+/*Campaña*/
+.cajasCampaña{
+    padding: 2rem;
+    margin: 1rem;
+    position:relative;
+    background: #0e0928;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border-radius: 10px;
+    text-align: justify;
+    flex-flow: column;
+    display: flex;
+}
+.cajasCampaña:hover{
+    transform: translateY(-15px);
+    transition: 0.7s;
+}
+.cajasDinero{
+    margin-top: 5rem;;
+    margin:auto;
+    width: 8rem;
+    height: 8rem;
+    background-color: #7b60a8;
+    border-radius: 100%; 
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+}
+.cajasCampaña:hover .cajasDinero{
+    transform: scale(1.2);
+    transition: 1s;
+    background-color: #a89d60;
+   } 
+   
+.textoCampaña{
+    padding:1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    position: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    display: flex;
+}
+
+.MargenesTexto{
+    background-color: #341a42;
+    text-align: justify;
+    align-items: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 2rem;
+    border-radius: 10px;
+}
+@media (max-width: 768px){
+
+p{
+    margin-top: 0;
+    font-size: 1rem;
+    font-family:'Texto';
+}
+h5{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family:'Texto';
+}
+
+}
+
+/* Minijuegos*/
+.cajasPagPrincipal{
+    display: inline-block;
+    background: #602D7B;
+    margin: 0.75rem;
+    padding: 20px 10px;
+    height: 15rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 4px solid #2b0549;
+}
+
+.cajasMJindividuales{
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    background: #602D7B;
+    margin: 0.75rem;
+    padding: 2px;
+    width: 95rem;
+    height: 40rem;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 4px solid #2b0549;
+}
+.textoDescrip{
+    margin: 1rem;
+    padding: 2rem;
+    padding-bottom: .2rem;
+    width: 20rem;
+    border-radius: 10px;
+}
+.tituloMinijuegos {
+    background: #602D7B;
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+details{
+    background: #F6FD96;
+    padding: .5rem;
+    border-radius: 10px;
+    margin: .5rem;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #581188;
+    border: 4px solid #362e07;
+    font-family:'Texto';
+}
+
+.Preguntas{
+    text-align: center;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+.Margenes{
+    text-align: center;
+    align-items: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+
+.Respuesta{
+    background: #fffdd1;
+    margin: 0;
+    border-radius: 6px;
+    padding: 1rem;
+    border: 3px solid #8a7406;
+    flex-flow: column;
+    display: flex;
+}
+
+summary{
+    list-style: none;
+    transition: 0.2s;
+    user-select: none;
+    cursor: pointer;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-family:'Texto';
+}
+
+summary:hover{
+    color: #ff01f7;
+    text-decoration: underline
+}
+
+summary::before{
+    content: '+';
+    padding-right: .5rem;
+}
+summary:active{
+    transition: 0s;
+    color: #ff0000;
+}
+
+details[open] summary::before{
+    content: '-';
+    padding-right: .5rem;
+}
+
+.PosiciónDescripciones{
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 2rem;
+    justify-content: center;
+}
+
+a{
+    transition: 0.2s;
+    user-select: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #ff01f7;
+    text-decoration: underline
+}
+
+a:active{
+    transition: 0s;
+    color: #ff0000;
+}
+@media (max-width: 1400px){
+    html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+    body{
+        background-color: #9250BE;
+        color:#FBFBD5;
+        text-align: center;
+        flex-flow: column;
+        font-size: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cajasPagPrincipal{
+        display: inline-block;
+        background: #602D7B;
+        margin: 0.75rem;
+        padding: 20px 10px;
+        height: 15rem;
+        border-radius: 10px;
+        text-align: center;
+        border: 4px solid #2b0549;
+    }
+    .cajasMJindividuales{
+        display: flex;
+        flex-flow: column;
+        background: #602D7B;
+        margin: 0.75rem;
+        padding: 20px;
+        width: 90%;
+        height: 50%;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .PosiciónDescripciones{
+        display: flex;
+        flex-flow: column;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1rem;
+        justify-content: center;
+    }
+
+    .imgMinijuegos{
+        width: 95%;
+        height: 95%;
+    }
+
+    .textoDescrip{
+        background: #602D7B;
+        margin: 0.75rem;
+        padding: 2rem;
+        padding-bottom: .2rem;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    p{
+        margin-top: 0;
+        font-size: 18px;
+        font-family: 'Texto';
+    }
+
+    .tituloMinijuegos {
+        background: #602D7B;
+        text-align: center;
+        font-size: 4rem;
+        width: 100%;
+        margin: 0;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .Preguntas{
+        text-align: center;
+        flex-flow: column;
+        align-items: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .Margenes{
+        text-align: center;
+        flex-flow: column;
+        align-items: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .MargenesTexto{
+    background-color: #341a42;
+    text-align: justify;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 2rem;
+    border-radius: 10px;
+    }
+
+    .cajaTexto{
+        background: #602D7B;
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border: 3px solid #2b0549;
+    }
+
+    .MargenesTexto{
+    background-color: #341a42;
+    text-align: justify;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 2rem;
+    border-radius: 10px;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    h3{
+    background-color: #2b0549;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #FBFBD5; 
+} 
+}
+
+header{
+    background-color: #2b0549;
+    padding: .75rem;
+    text-align: center;
+    margin: 0;
+}
+
+nav{
+    font-weight: 600;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    
+}
+
+nav a:hover{
+    color:#ff01f7;
+}
+article {
+    font-size: 1em;
+    color: #FBFBD5;
+}
+
+.main-image {
+    text-align: center;
+    object-fit: cover;
+
+}
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 20%;
+    
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+}
+  .author img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #00ffcc;
+  }
+  .disclaimer {
+    font-size: 0.9em;
+    background: #581188;
+    padding: 15px;
+    border-left: 5px solid #2b0549;
+    margin-top: 40px;
+  }
+  nav {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #602D7B;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px #2b0549;
+  }
+  nav ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+  padding-left: 50px;
+  display: flex;
+  }
+  nav li {
+  margin-right: 50px;
+  }
+  nav a {
+  color: #FBFBD5;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  nav a:hover {
+  text-decoration: underline;
+  }
+
+nav a:active{
+    transition: 0s;
+    color: #ff0000;
+}
+
+.cajaTexto{
+    background: #602D7B;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border: 3px solid #2b0549;
+}
+
+.hamburger-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background-color: #602D7B;
+  color: #FBFBD5;
+  border: 3px solid #2b0549;
+  border-radius: 8px;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  background-color: #7a3a9d;
+}
+
+#main-nav {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #602D7B;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px #2b0549;
+  transition: all 0.3s ease;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#main-nav li {
+  margin: 0 25px;
+}
+
+#main-nav a {
+  color: #FBFBD5;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+#main-nav a:hover {
+  color: #ff01f7;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+  
+  #main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(43, 5, 73, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  #main-nav.active {
+    transform: translateY(0);
+  }
+  
+  #main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #main-nav li {
+    margin: 15px 0;
+  }
+  
+  #main-nav a {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
+
+.video{
+    text-align: center;
+    padding: 30px;
+    width: 80%;
+    height: 640px;
+}
+
+audio{
+    margin: 1rem;
+}
